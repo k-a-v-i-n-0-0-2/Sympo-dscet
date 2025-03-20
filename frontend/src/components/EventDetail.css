@@ -1,0 +1,118 @@
+/* EventDetail.css */
+.event-detail {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .event-header {
+    /* Remove the background image that's causing an error */
+    background-color: #1a1a2e; /* Use a solid color instead */
+    color: white;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .event-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .event-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .event-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-description {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .event-speakers {
+    margin-bottom: 2rem;
+  }
+  
+  .speakers-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a2e;
+  }
+  
+  .speakers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .speaker-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .speaker-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .speaker-info h4 {
+    margin-bottom: 0.25rem;
+    color: #1a1a2e;
+  }
+  
+  .speaker-role {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a1a2e;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .back-button:hover {
+    color: #e63946;
+  }
+  
+  @media (max-width: 768px) {
+    .event-header {
+      padding: 2rem 1rem;
+    }
+  
+    .event-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  
+    .speakers-list {
+      grid-template-columns: 1fr;
+    }
+  }
